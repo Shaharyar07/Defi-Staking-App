@@ -40,7 +40,7 @@ describe("DecentralBank", async([owner, customer]) => {
       let name = await bank.name();
       expect(name).to.equal("Mock Tether Token");
     });
-    it("Has tokens in bank", async () => {
+    it("Has tokens in Bank", async () => {
       let balance = await rwd.balanceOf(bank.address);
       expect(balance).to.equal(ethers.utils.parseEther("1000000"));
     });
